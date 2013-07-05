@@ -22,7 +22,7 @@ function wpdk_create_admin_menu_1() {
 
   // Create the menu through WPDK
   $menu = new WPDKMenu( 'wpdk-sample-menu-1', __( 'Hello World!' ) );
-  // Hook a function to the menu item ( note that WP sets the first menu item equal to the menu global name above )
+  // Hook a function to the menu item ( note that WP sets the first menu item equal to the menu global string above )
   $menu->addSubMenu( __( 'First item' ), 'wpdk_display_hello_world_1' );
   // Display the menu
   $menu->render();
